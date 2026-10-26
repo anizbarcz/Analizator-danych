@@ -8,6 +8,11 @@ from wykresy import generuj_wykres
 
 
 def wyswietl_menu():
+    """
+    Wyświetla menu główne w konsoli
+    """
+
+
     print(colored("\n\nRESERCH DATA ANALYZER","magenta"))
     print("1. Wczytaj dane z pliku csv")
     print("2. Wyświetl dane")
@@ -18,6 +23,10 @@ def wyswietl_menu():
     print(colored("-" * 40,"blue"))
 
 def uruchom_menu():
+
+    """
+    Obsługuje wybór opcji w menu i wywoluje odpowiednie funkcje
+    """
 
     dane = None
 

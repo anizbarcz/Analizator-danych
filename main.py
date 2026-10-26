@@ -18,6 +18,10 @@ from interfejs import uruchom_menu
 
 
 def main():
+    """
+    Uruchamia menu główne aplikacji
+    """
+
     uruchom_menu()
 
 if __name__ == "__main__":

@@ -4,6 +4,13 @@ from pathlib import Path
 
 
 def zapisz_do_bazy(df):
+    """
+    Zapisuje dane pogodowe do bazy SQLite
+
+    Args:
+        df (pandas.DataFrame | None): dane do zapisu w bazie
+    """
+
     if df is None or df.empty:
         print("Najpierw wczytaj dane")
         return

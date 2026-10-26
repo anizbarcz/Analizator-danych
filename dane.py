@@ -7,6 +7,13 @@ from termcolor import colored
 
 #metoda glob służy do wyszukiwania plików, które pasują do wzorca
 def wczytaj_dane():
+    """
+    Pozwala wybrać plik CSV z katalogu data i wczytuje go do DataFrame
+
+    Returns:
+        pandas.DataFrame | None: Wczytane dane lub None, jeśli nie wybrano pliku lub wystąpił błąd
+    """
+
     folder = Path("data")
     pliki = sorted(folder.glob("*.csv"))
 
@@ -54,6 +61,13 @@ def wczytaj_dane():
 
 
 def wyswietl_dane(df):
+    """
+    Wyświetla podgląd danych oraz podstawowe informacje o zbiorze
+
+    Args:
+        df (pandas.Data Frame | None): Dane do wyświetlenia
+    """
+
     if df is None:
         print(colored("\nNapierw wczytaj plik csv","red"))
         return
