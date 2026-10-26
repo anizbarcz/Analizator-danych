@@ -50,7 +50,7 @@ def test_wczytaj_dane(tmp_path, monkeypatch):
     df = wczytaj_dane()
 
     assert df is not None
-    assert "Liczba wierszy: 2"
+    assert len(df) == 2
     
 
 def test_wczytaj_dane_brak_plikow(tmp_path, monkeypatch, capsys):
