@@ -25,3 +25,7 @@ Thubs.db
 
 #inne pliki własne
 ruff.txt
+
+#inne katalogi
+dist/
+Research_Data_Analyzer.egg-info/

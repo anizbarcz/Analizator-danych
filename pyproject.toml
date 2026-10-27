@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "Research-Data-Analyzer"
+version = "1.0.0"
+description = "Aplikacja do analizy danych badawczych"
+requires-python = ">=3.12"
+dependencies = [
+    "pandas",
+    "matplotlib",
+    "termcolor"
+] 
+
+[project.scripts]
+research-analyzer = "main:main"
+
+[tool.setuptools]
+py-modules = [
+    "main",
+    "dane",
+    "analiza",
+    "interfejs",
+    "baza",
+    "wykresy",
+    "logowanie"
+]
