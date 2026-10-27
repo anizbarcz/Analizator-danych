@@ -2,7 +2,7 @@
 
 FROM python:3.12
 
-WORKDIR / app
+WORKDIR /app
 
 #pierwsza kropka skąd bierzemy pliki, druga kropka gdzie będą kopiowane - tu do katalogu app
 #polecenie COPY nie wybiera automatycznie potrzebnych plików, stąd stosowaie .dockerignore
