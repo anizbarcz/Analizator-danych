@@ -16,6 +16,9 @@ database/*.sqlite
 #wygenerowane wykresy
 results/ 
 
+# logi aplikacji
+logs/
+
 #pliki systemowe
 .DS_Store
 Thubs.db 

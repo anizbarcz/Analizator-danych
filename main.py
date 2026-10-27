@@ -14,15 +14,22 @@
 #     #"__main__" - wartość oznaczająca moduł uruchamiany jako główny program
 #     if __name__ == "__main__":
 #         main()
+import logging
+
 from interfejs import uruchom_menu
+from logowanie import konfiguruj_logowanie
 
 
 def main():
     """
     Uruchamia menu główne aplikacji
     """
+    konfiguruj_logowanie()
+    logging.info("Uruchomiono aplikację")
 
     uruchom_menu()
+
+    logging.info("Zakończono działanie aplikacji")
 
 if __name__ == "__main__":
     main()
