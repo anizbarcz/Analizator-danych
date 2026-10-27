@@ -71,9 +71,19 @@ Automatycznna naprawa błędów oznaczonych [*]
 ```bash
 python -m ruff check . --fix
 ```
+## 10. Dystrybucja pakietu
 
-## 10. Zastosowanie
+Projekt jest dostępny dla użytkowników w postaci pakietu instalacyjnego .whl z wykorzystaniem **GitHub Relase**.
+
+Po pobraniu pliku *.whl można zainstalować wszystko poleceniem
+```bash
+python -m pip install research_data_analyzer-1.0.0-py3-none-any.whl
+```
+Instalcja wymaga zgodnej wersji Pythona oraz przygotowania środowiska wirtualnego venv.
+
+## 11. Zastosowanie
 Aplikacja stanowi gotowe rozwiązanie edukacyjne oraz narzędziowe stworzone w ramach szkolenia z języka Python. Prezentuje w praktyce:
 *   Zasady modułowości kodu i separacji odpowiedzialności warstw (MVC/modułowość).
 *   Efektywne wykorzystanie biblioteki `pandas` do szybkiego przetwarzania danych statystycznych.
 *   Pracę z relacyjnymi bazami danych w Pythonie bez użycia ciężkich zewnętrznych systemów DBMS (dzięki SQLite3).
+
